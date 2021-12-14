@@ -1,0 +1,21 @@
+<h3>Add an announcement </h3>
+<div class="form-group">
+</div>
+<form [formGroup]="postForm"  novalidate>
+  <div class="example-container" >
+    <mat-form-field appearance="fill" hintLabel="Max 30 characters">
+      <input matInput #input maxlength="30"  placeholder="Title"   formControlName="title">
+      <mat-hint align="end">{{input.value?.length || 0}}/30</mat-hint>
+      <mat-error *ngIf="checkError('title', 'required')">Title is required</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <input matInput  placeholder="Description"   formControlName="description">
+      <mat-error *ngIf="checkError('description', 'required')">Description is required</mat-error>
+    </mat-form-field>
+
+    <button [disabled]="!postForm.valid" mat-raised-button color="accent" mat-button (click)="saveClick()">Add</button>
+  </div>
+</form>
+
+
+

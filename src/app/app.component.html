@@ -1,0 +1,34 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true">
+    <div class="logo-main">CRUD Application</div>
+    <mat-nav-list>
+      <mat-list-item routerLink="/list" routerLinkActive="active">
+        <span class="material-icons">format_list_bulleted</span>
+        <div fxFlex="10"></div>
+        <div  class="sidenav-item">
+          <h5 class="lead" >Announcement's list</h5>
+        </div>
+      </mat-list-item>
+      <mat-list-item routerLink="/add">
+        <span class="material-icons">control_point</span>
+        <div fxFlex="10"></div>
+        <div class="sidenav-item">
+          <h5 class="lead">Add an announcement</h5>
+        </div>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
+
+
+
+
+
+
+
+
+
+
+
+

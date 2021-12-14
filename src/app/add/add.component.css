@@ -1,0 +1,36 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+h3, p {
+  font-family: Lato, sans-serif;
+  text-align: center;
+  color: aliceblue;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.example-container > * {
+  width: 30%;
+}
+
+.mat-form-field{
+  margin: 10px 0;
+}
+
+.mat-button {
+  margin: 10px 0;
+
+}
+
+.mat-form-field{
+  color: aliceblue ;
+}
+
+
+
+
+
